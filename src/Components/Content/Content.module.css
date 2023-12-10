@@ -1,0 +1,20 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+  grid-area: content;
+}
+
+@media screen and (min-width: 900px) {
+  .mainContent {
+    width: 80%;
+  }
+}

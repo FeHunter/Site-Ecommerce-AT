@@ -1,0 +1,147 @@
+.cardArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 500px;
+  margin: 10px 0px;
+}
+
+.itemCardViewDetails {
+  display: grid;
+  grid-template-columns: 0% 100%;
+  grid-template-rows: 100%;
+  width: 100%;
+  height: 100%;
+  grid-template-areas: 'main aside';
+  transition: 0.2s;
+  border-bottom: 1px solid gray;
+}
+.itemCard {
+  display: grid;
+  grid-template-columns: 100% 0%;
+  grid-template-rows: 100%;
+  width: 100%;
+  height: 100%;
+  grid-template-areas: 'main aside';
+  transition: 0.2s;
+  border-bottom: 1px solid black;
+}
+
+.mainContainer {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.hideMainContent {
+  display: none;
+}
+
+.asideContainer {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 2%;
+  transition-delay: 0.1s;
+}
+.asideContainerHie {
+  transition-delay: 0.3s;
+  display: none;
+}
+
+.asideSeller {
+  border-bottom: 1px solid gray;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cardInfo p {
+  width: 80%;
+}
+
+.cardItemImage {
+  border-radius: 10px;
+  width: 70%;
+}
+
+.cardItemName {
+  text-align: center;
+  font-size: 1.3em;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.cardButtons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.toggleButton {
+  padding: 2%;
+  border: none;
+  background-color: black;
+  color: white;
+  z-index: 1;
+}
+
+.toggleButtonMobile {
+  display: flex;
+  width: 100%;
+  color: white;
+  padding: 2%;
+  justify-content: center;
+  background-color: black;
+  border: none;
+}
+
+.RelatedProductArea {
+  display: flex;
+}
+
+@media screen and (min-width: 900px) {
+  .cardArea {
+    width: 40%;
+  }
+  .itemCardViewDetails {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: 'main aside';
+    transition: 0.2s;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+  }
+  .itemCard {
+    display: grid;
+    grid-template-columns: 100% 0%;
+    grid-template-rows: 100%;
+    width: 50%;
+    height: 100%;
+    grid-template-areas: 'main aside';
+    transition: 0.2s;
+    border-bottom: 1px solid black;
+  }
+  .hideMainContent {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .asideContainer {
+    border-left: 1px solid gray;
+  }
+  .toggleButtonMobile {
+    display: none;
+  }
+}

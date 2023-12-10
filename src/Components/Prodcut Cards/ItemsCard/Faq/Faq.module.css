@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px 0px;
+  margin: 5% 0px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.UpContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4%;
+}
+
+.doubt {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted lightgray;
+  text-indent: 10px;
+}
+.asnwer {
+  display: flex;
+  justify-content: space-between;
+  text-indent: 10px;
+}

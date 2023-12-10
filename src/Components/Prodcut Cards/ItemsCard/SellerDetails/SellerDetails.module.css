@@ -1,0 +1,15 @@
+.sellerDetails {
+  display: flex;
+}
+
+.sellerPerfil {
+  width: 20%;
+  height: 100%;
+  margin: 10px;
+}
+
+.sellerTitle {
+  border-bottom: 1px solid gray;
+  text-align: center;
+  margin-bottom: 2px;
+}

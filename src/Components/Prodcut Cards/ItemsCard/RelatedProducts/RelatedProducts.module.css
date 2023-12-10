@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  width: 35%;
+  flex-direction: column;
+  margin: 3%;
+}
+
+.container:hover {
+  cursor: pointer;
+  color: yellowgreen;
+}
+
+.image {
+  width: 100%;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}

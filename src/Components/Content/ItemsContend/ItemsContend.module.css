@@ -1,0 +1,14 @@
+.ItemContend {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 900px) {
+  .ItemContend {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

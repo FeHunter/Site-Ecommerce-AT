@@ -1,0 +1,45 @@
+.SliderShow {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 90% 10%;
+  grid-template-areas: 'container container' 'buttonL buttonR';
+  width: 100%;
+}
+
+.container {
+  grid-area: container;
+}
+
+.buttonLeft {
+  grid-area: buttonL;
+}
+.buttonRight {
+  grid-area: buttonR;
+}
+
+@media screen and (min-width: 900px) {
+  .SliderShow {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 100%;
+    grid-template-areas: 'buttonL container buttonR';
+    justify-content: space-between;
+    align-items: stretch;
+    /* order: 1; */
+  }
+
+  .SliderShowButton {
+    width: 5%;
+    height: 100%;
+    /* order: 0; */
+    flex-grow: 1;
+  }
+
+  .buttonLeft {
+    grid-area: buttonL;
+  }
+  .buttonRight {
+    grid-area: buttonR;
+  }
+}
